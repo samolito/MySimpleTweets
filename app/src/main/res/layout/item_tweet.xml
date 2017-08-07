@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp">
+
+<ImageView
+    android:id="@+id/ivProfilImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher"
+    android:minWidth="50dp"
+    android:minHeight="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/tvprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Profile"
+        android:layout_above="@+id/tvtweetbody"
+        android:layout_toEndOf="@+id/ivProfilImage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_screen_name"
+        android:id="@+id/tvUserScreenName"
+        android:layout_above="@+id/tvtweetbody"
+        android:layout_toRightOf="@+id/tvprofile"
+        android:layout_toEndOf="@+id/tvprofile" />
+    <TextView
+        android:id="@+id/tvtweetbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:layout_alignBottom="@+id/ivProfilImage"
+        android:layout_toEndOf="@+id/ivProfilImage" />
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/tvtweetbody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ic_launcher"
+        />
+</RelativeLayout>
